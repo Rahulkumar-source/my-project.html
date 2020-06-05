@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<Title> Js Assignment </title>
+</head>
+<body>
+   <button id="personalbutton">personal information</button>
+   <button id="educationalbutton">Educational information</button>
+   <button id="hobbiesbutton"> Hobbies & Interest</button>
+   
+   <div id="personal">
+   <h2> personal Information</h2>
+    <p class="a"><img src="me1.jpg"><p>Hello I am Rahul Kumar From Motihari College Of Engineering , Motihari
+    I am B.TECH 2nd Year  Computer Science Student.I belongs to 
+	Banka District.</p>
+	
+	</div>
+	   <div id="educational">
+	   <h2>Educational</h2>
+	     <p class="eat"> Hello I am Rahul Kumar From Banka District.
+   I have Passed Matriculation in 2016 for [Ramanand and Parsiram +2 High School Jalalabad Asarganj,(Munger)]
+   and I have also passed Intermidate in 2018 for [K.M College Asarganj,(Bhagalpur)].And currently stdying 
+   Motihari College Of Engineering,Motihari B.TECH 2nd year Computer Science Student.</p>
+		  </div>
+		  
+		  <div id="hobbies">
+		      <h2>Interest</h2>
+			  dancing & Helping other people.
+			  </div>
+
+<script type="text/javascript">
+   var x=document.getElementById("personalbutton");
+   var y=document.getElementById("educationalbutton");
+   var z=document.getElementById("hobbiesbutton");
+   x.addEventListener("click",personal);
+   y.addEventListener("click",educational);
+   z.addEventListener("click",hobbies);
+
+        function personal(){
+            document.getElementById("personal").style.display="block";
+			document.getElementById("educational").style.display="none";
+			document.getElementById("hobbies").style.display="none";
+			}
+			
+	   function educational(){
+	        document.getElementById("educational").style.display="block";
+			document.getElementById("personal").style.display="none";
+			document.getElementById("hobbies").style.display="none";
+			}
+			
+		function hobbies(){
+	        document.getElementById("hobbies").style.display="block";
+			document.getElementById("personal").style.display="none";
+			document.getElementById("educational").style.display="none";
+			} 
+</script>
+</body>
+</html> 
+   <style type="text/css">
+    #educational,#hobbies{display:none;}
+	
+	#personal{
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 10px;
+  border:10px solid blue;
+  background-image:url;
+  background-size:100% 100%;}
+   img{width:15%;
+         height:15%;
+		  border-radius:50%;
+		  border: 1px solid white;
+		  }
+		  
+	#educational {
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 10px;
+  border:10px solid blue;
+  background-image:url('p5.jpg');
+  background-size:100% 100%;}
+  
+    </style>	
+ 
