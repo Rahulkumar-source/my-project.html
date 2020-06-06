@@ -61,6 +61,7 @@
     #educational,#hobbies{display:none;}
 	
 	#personal{
+	
   padding: 50px 0;
   text-align: center;
   background-color: lightblue;
